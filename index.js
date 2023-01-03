@@ -75,7 +75,7 @@ see if you can figure out how to render an <ul> with 2+ <li>s inside */
 //   document.getElementById("root")
 // )
 
-ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
+// ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
 
 /* 
 Challenge - recreate the above line of code in vanilla JS by creating and
@@ -92,3 +92,43 @@ appending an h1 to our div#root (without using innerHTML).
 // h1.textContent.textContent = "This is an imperative way to program"
 // h1.className = "header"
 // document.getElementById("root").append(h1)
+
+//JSX
+// const page = (
+//   <div>
+//     <h1 className="header">This is JSX</h1>
+//     <p>This is a paragraph</p>
+//   </div>
+// )
+
+// ReactDOM.render(
+//   page,
+//   document.getElementById("root")
+// )
+
+/* Challenge: 
+
+Create a navbar in JSX:
+    - Use the semantic `nav` element as the parent wrapper
+    - Have an h1 element with the brand name of your "website"
+    - Insert an unordered list for the other nav elements
+        - Inside the `ul`, have three `li`s for "Pricing",
+        "About", and "Contact"
+    - Don't worry about styling yet - it'll just be plain-looking HTML for now
+*/
+
+const navbar = (
+  <nav>
+    <h1>Website</h1>
+    <ul>
+      <li>Menu</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+)
+
+ReactDOM.render(
+  navbar,
+  document.getElementById("root")
+)
