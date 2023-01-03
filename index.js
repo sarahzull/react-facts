@@ -117,6 +117,9 @@ Create a navbar in JSX:
     - Don't worry about styling yet - it'll just be plain-looking HTML for now
 */
 
+import React from "react"
+import ReactDOM from "react-dom"
+
 const navbar = (
   <nav>
     <h1>Website</h1>
