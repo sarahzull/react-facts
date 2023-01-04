@@ -63,177 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _react = __webpack_require__(3);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(5);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// ReactDOM.render(<h1>Hi everyone</h1>, document.getElementById("root"))
-
-// ReactDOM.render(<p>Hi, my name is Sarah!</p>, document.getElementById("root"))
-
-/* Surprise! You probably thought you could just forget
-the line of code you just learned! Nope, not on my watch!
-
-Try to write that 1-liner of React code again! This time,
-see if you can figure out how to render an <ul> with 2+ <li>s inside */
-
-// ReactDOM.render(
-//   <ul><li>Thing 1</li> <li>Thing 2</li></ul>,
-//   document.getElementById("root")
-// )
-
-// function Navbar() {
-//   return (
-//       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-//           <a className="navbar-brand" href="#">Navbar</a>
-//           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-//               <span className="navbar-toggler-icon"></span>
-//           </button>
-
-//           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-//               <ul className="navbar-nav mr-auto">
-//               <li className="nav-item active">
-//                   <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-//               </li>
-//               <li className="nav-item">
-//                   <a className="nav-link" href="#">Link</a>
-//               </li>
-//               <li className="nav-item dropdown">
-//                   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-//                   Dropdown
-//                   </a>
-//                   <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-//                   <a className="dropdown-item" href="#">Action</a>
-//                   <a className="dropdown-item" href="#">Another action</a>
-//                   <div className="dropdown-divider"></div>
-//                   <a className="dropdown-item" href="#">Something else here</a>
-//                   </div>
-//               </li>
-//               <li className="nav-item">
-//                   <a className="nav-link disabled" href="#">Disabled</a>
-//               </li>
-//               </ul>
-//               <form className="form-inline my-2 my-lg-0">
-//                   <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-//                   <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-//               </form>
-//           </div>
-//       </nav>
-//   )
-// }
-
-// Challenge: Create your own custom React component!
-// Call it "MainContent", and have it return a simple
-// h1 element that says "I'm learning React!"
-
-// Afterward, render it below the Navbar (which
-// you can do inside the ReactDOM.render call below)
-
-// function MainContent() {
-//   return (
-//     <h1>I'm learning React!</h1>
-//   )
-// }
-
-// ReactDOM.render(
-//   <div>
-//     <Navbar />
-//     <MainContent />
-//   </div>,
-//   document.getElementById("root")
-// )
-
-// ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
-
-/* 
-Challenge - recreate the above line of code in vanilla JS by creating and
-appending an h1 to our div#root (without using innerHTML).
-
-- Create a new h1 element
-- Give it some textContent
-- Give it a class name of "header"
-- append it as a child of the div#root
-    
-*/
-
-// const h1 = document.createElement("h1")
-// h1.textContent.textContent = "This is an imperative way to program"
-// h1.className = "header"
-// document.getElementById("root").append(h1)
-
-//JSX
-// const page = (
-//   <div>
-//     <h1 className="header">This is JSX</h1>
-//     <p>This is a paragraph</p>
-//   </div>
-// )
-
-// ReactDOM.render(
-//   page,
-//   document.getElementById("root")
-// )
-
-/* Challenge: 
-
-Create a navbar in JSX:
-    - Use the semantic `nav` element as the parent wrapper
-    - Have an h1 element with the brand name of your "website"
-    - Insert an unordered list for the other nav elements
-        - Inside the `ul`, have three `li`s for "Pricing",
-        "About", and "Contact"
-    - Don't worry about styling yet - it'll just be plain-looking HTML for now
-*/
-
-var navbar = _react2.default.createElement(
-  "nav",
-  null,
-  _react2.default.createElement(
-    "h1",
-    null,
-    "Website"
-  ),
-  _react2.default.createElement(
-    "ul",
-    null,
-    _react2.default.createElement(
-      "li",
-      null,
-      "Menu"
-    ),
-    _react2.default.createElement(
-      "li",
-      null,
-      "About"
-    ),
-    _react2.default.createElement(
-      "li",
-      null,
-      "Contact"
-    )
-  )
-);
-
-_reactDom2.default.render(navbar, document.getElementById("root"));
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -423,7 +257,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 2 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -520,7 +354,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -532,10 +366,10 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(8);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -547,10 +381,10 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(12);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -593,7 +427,176 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(6);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(4);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// ReactDOM.render(<h1>Hi everyone</h1>, document.getElementById("root"))
+
+// ReactDOM.render(<p>Hi, my name is Sarah!</p>, document.getElementById("root"))
+
+/* Surprise! You probably thought you could just forget
+the line of code you just learned! Nope, not on my watch!
+
+Try to write that 1-liner of React code again! This time,
+see if you can figure out how to render an <ul> with 2+ <li>s inside */
+
+// ReactDOM.render(
+//   <ul><li>Thing 1</li> <li>Thing 2</li></ul>,
+//   document.getElementById("root")
+// )
+
+// function Navbar() {
+//   return (
+//       <nav className="navbar navbar-expand-lg navbar-light bg-light">
+//           <a className="navbar-brand" href="#">Navbar</a>
+//           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+//               <span className="navbar-toggler-icon"></span>
+//           </button>
+
+//           <div className="collapse navbar-collapse" id="navbarSupportedContent">
+//               <ul className="navbar-nav mr-auto">
+//               <li className="nav-item active">
+//                   <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+//               </li>
+//               <li className="nav-item">
+//                   <a className="nav-link" href="#">Link</a>
+//               </li>
+//               <li className="nav-item dropdown">
+//                   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+//                   Dropdown
+//                   </a>
+//                   <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+//                   <a className="dropdown-item" href="#">Action</a>
+//                   <a className="dropdown-item" href="#">Another action</a>
+//                   <div className="dropdown-divider"></div>
+//                   <a className="dropdown-item" href="#">Something else here</a>
+//                   </div>
+//               </li>
+//               <li className="nav-item">
+//                   <a className="nav-link disabled" href="#">Disabled</a>
+//               </li>
+//               </ul>
+//               <form className="form-inline my-2 my-lg-0">
+//                   <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+//                   <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+//               </form>
+//           </div>
+//       </nav>
+//   )
+// }
+
+// Challenge: Create your own custom React component!
+// Call it "MainContent", and have it return a simple
+// h1 element that says "I'm learning React!"
+
+// Afterward, render it below the Navbar (which
+// you can do inside the ReactDOM.render call below)
+
+// function MainContent() {
+//   return (
+//     <h1>I'm learning React!</h1>
+//   )
+// }
+
+// ReactDOM.render(
+//   <div>
+//     <Navbar />
+//     <MainContent />
+//   </div>,
+//   document.getElementById("root")
+// )
+
+// ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
+
+/* 
+Challenge - recreate the above line of code in vanilla JS by creating and
+appending an h1 to our div#root (without using innerHTML).
+
+- Create a new h1 element
+- Give it some textContent
+- Give it a class name of "header"
+- append it as a child of the div#root
+    
+*/
+
+// const h1 = document.createElement("h1")
+// h1.textContent.textContent = "This is an imperative way to program"
+// h1.className = "header"
+// document.getElementById("root").append(h1)
+
+//JSX
+// const page = (
+//   <div>
+//     <h1 className="header">This is JSX</h1>
+//     <p>This is a paragraph</p>
+//   </div>
+// )
+
+// ReactDOM.render(
+//   page,
+//   document.getElementById("root")
+// )
+
+/* Challenge: 
+
+Create a navbar in JSX:
+    - Use the semantic `nav` element as the parent wrapper
+    - Have an h1 element with the brand name of your "website"
+    - Insert an unordered list for the other nav elements
+        - Inside the `ul`, have three `li`s for "Pricing",
+        "About", and "Contact"
+    - Don't worry about styling yet - it'll just be plain-looking HTML for now
+*/
+
+var navbar = _react2.default.createElement(
+  "nav",
+  null,
+  _react2.default.createElement(
+    "h1",
+    null,
+    "Website"
+  ),
+  _react2.default.createElement(
+    "ul",
+    null,
+    _react2.default.createElement(
+      "li",
+      null,
+      "Menu"
+    ),
+    _react2.default.createElement(
+      "li",
+      null,
+      "About"
+    ),
+    _react2.default.createElement(
+      "li",
+      null,
+      "Contact"
+    )
+  )
+);
+
+/* Old version */
+_reactDom2.default.render(navbar, document.getElementById("root"));
+
+// ReactDOM.createRoot(document.getElementById("root")).render(navbar)
 
 /***/ }),
 /* 6 */
@@ -615,9 +618,9 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(3);
-var _assign = __webpack_require__(2);
-var Scheduler = __webpack_require__(4);
+var React = __webpack_require__(2);
+var _assign = __webpack_require__(1);
+var Scheduler = __webpack_require__(3);
 var tracing = __webpack_require__(14);
 
 var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
@@ -26863,7 +26866,7 @@ exports.version = ReactVersion;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 7 */
@@ -26881,7 +26884,7 @@ exports.version = ReactVersion;
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(3),m=__webpack_require__(2),r=__webpack_require__(4);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
+var aa=__webpack_require__(2),m=__webpack_require__(1),r=__webpack_require__(3);function y(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(y(227));var ba=new Set,ca={};function da(a,b){ea(a,b);ea(a+"Capture",b)}
 function ea(a,b){ca[a]=b;for(a=0;a<b.length;a++)ba.add(b[a])}
 var fa=!("undefined"===typeof window||"undefined"===typeof window.document||"undefined"===typeof window.document.createElement),ha=/^[:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD][:A-Z_a-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD\-.0-9\u00B7\u0300-\u036F\u203F-\u2040]*$/,ia=Object.prototype.hasOwnProperty,
 ja={},ka={};function la(a){if(ia.call(ka,a))return!0;if(ia.call(ja,a))return!1;if(ha.test(a))return ka[a]=!0;ja[a]=!0;return!1}function ma(a,b,c,d){if(null!==c&&0===c.type)return!1;switch(typeof b){case "function":case "symbol":return!0;case "boolean":if(d)return!1;if(null!==c)return!c.acceptsBooleans;a=a.toLowerCase().slice(0,5);return"data-"!==a&&"aria-"!==a;default:return!1}}
@@ -27189,7 +27192,7 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(2);
+var _assign = __webpack_require__(1);
 
 // TODO: this is special because it gets imported during build.
 var ReactVersion = '17.0.2';
@@ -29508,7 +29511,7 @@ exports.version = ReactVersion;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 9 */
@@ -29523,7 +29526,7 @@ exports.version = ReactVersion;
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var l=__webpack_require__(2),n=60103,p=60106;exports.Fragment=60107;exports.StrictMode=60108;exports.Profiler=60114;var q=60109,r=60110,t=60112;exports.Suspense=60113;var u=60115,v=60116;
+var l=__webpack_require__(1),n=60103,p=60106;exports.Fragment=60107;exports.StrictMode=60108;exports.Profiler=60114;var q=60109,r=60110,t=60112;exports.Suspense=60113;var u=60115,v=60116;
 if("function"===typeof Symbol&&Symbol.for){var w=Symbol.for;n=w("react.element");p=w("react.portal");exports.Fragment=w("react.fragment");exports.StrictMode=w("react.strict_mode");exports.Profiler=w("react.profiler");q=w("react.provider");r=w("react.context");t=w("react.forward_ref");exports.Suspense=w("react.suspense");u=w("react.memo");v=w("react.lazy")}var x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){if(null===a||"object"!==typeof a)return null;a=x&&a[x]||a["@@iterator"];return"function"===typeof a?a:null}function z(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}
 var A={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}},B={};function C(a,b,c){this.props=a;this.context=b;this.refs=B;this.updater=c||A}C.prototype.isReactComponent={};C.prototype.setState=function(a,b){if("object"!==typeof a&&"function"!==typeof a&&null!=a)throw Error(z(85));this.updater.enqueueSetState(this,a,b,"setState")};C.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
@@ -29893,7 +29896,7 @@ exports.unstable_wrap = unstable_wrap;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 11 */
@@ -30563,7 +30566,7 @@ exports.unstable_wrapCallback = unstable_wrapCallback;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 13 */
@@ -30605,7 +30608,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(10);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ })
 /******/ ]);
