@@ -446,6 +446,32 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// const navbar = (
+//   <nav>
+//     <h1>Website</h1>
+//     <ul>
+//       <li>Menu</li>
+//       <li>About</li>
+//       <li>Contact</li>
+//     </ul>
+//   </nav>
+// )
+
+/* Old version */
+// ReactDOM.render(
+//   navbar,
+//   document.getElementById("root")
+// )
+
+// ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+
+/**
+Challenge: fix our code!
+
+Don't forget, you're not using CDNs anymore, so there's no
+global "ReactDOM" variable to use anymore.
+ */
+
 // ReactDOM.render(<h1>Hi everyone</h1>, document.getElementById("root"))
 
 // ReactDOM.render(<p>Hi, my name is Sarah!</p>, document.getElementById("root"))
@@ -564,39 +590,47 @@ Create a navbar in JSX:
     - Don't worry about styling yet - it'll just be plain-looking HTML for now
 */
 
-var navbar = _react2.default.createElement(
-  "nav",
-  null,
-  _react2.default.createElement(
-    "h1",
-    null,
-    "Website"
-  ),
-  _react2.default.createElement(
-    "ul",
+var page = _react2.default.createElement(
+    "div",
     null,
     _react2.default.createElement(
-      "li",
-      null,
-      "Menu"
+        "h1",
+        null,
+        "My awesome website in React"
     ),
     _react2.default.createElement(
-      "li",
-      null,
-      "About"
+        "h3",
+        null,
+        "Reasons I love React"
     ),
     _react2.default.createElement(
-      "li",
-      null,
-      "Contact"
+        "ol",
+        null,
+        _react2.default.createElement(
+            "li",
+            null,
+            "It's composable"
+        ),
+        _react2.default.createElement(
+            "li",
+            null,
+            "It's declarative"
+        ),
+        _react2.default.createElement(
+            "li",
+            null,
+            "It's a hireable skill"
+        ),
+        _react2.default.createElement(
+            "li",
+            null,
+            "It's actively maintained by skilled people"
+        )
     )
-  )
 );
 
-/* Old version */
-_reactDom2.default.render(navbar, document.getElementById("root"));
-
-// ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+_reactDom2.default.render(page, document.getElementById("root"));
+// document.getElementById("root").append(JSON.stringify(page))
 
 /***/ }),
 /* 6 */
