@@ -177,22 +177,52 @@ Hints:
   just like in HTML. In the slide, I have it set to 40px
  */
 
+// import React from "react"
+// import ReactDOM from "react-dom"
+
+// function TemporaryName() {
+//     return (
+//         <div className="m-4">
+//         <img src="./react-logo.png" className="mb-2" width="50px"/>
+//         <p className="fw-bold fs-4">Fun facts about React</p>
+//         <ul>
+//             <li>Was first released in 2013</li>
+//             <li>Was originally created by Jordan Walke</li>
+//             <li>Has well over 100K stars on Github</li>
+//             <li>Is maintained by Facebook</li>
+//             <li>Powers thousands of enterprise apps, including mobile apps</li>
+//         </ul>
+//     </div>
+//     )
+// }
+
+// ReactDOM.render(<TemporaryName/>, document.getElementById("root"))
+
+
+/**
+Challenge: 
+
+Part 1: Create a page of your own using a custom Page component
+
+It should return an ordered list with the reasons why you're
+excited to be learning React :)
+
+Render your list to the page
+
+ */
+    
 import React from "react"
 import ReactDOM from "react-dom"
 
-const page = (
-    <div className="m-4">
-        <img src="./react-logo.png" className="mb-2" width="50px"/>
-        <p className="fw-bold fs-4">Fun facts about React</p>
-        <ul>
-            <li>Was first released in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 100K stars on Github</li>
-            <li>Is maintained by Facebook</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>
-        </ul>
-    </div>
-)
+function Page() {
+    return (
+        <ol>
+            <li>It's a popular library, so I'll be able to 
+                fit in with the cool kids!</li>
+            <li>I'm more likely to get a job as a developer
+            if I know React</li>
+        </ol>
+    )
+}
 
-ReactDOM.render(page, document.getElementById("root"))
-    
+ReactDOM.render(<Page/>, document.getElementById("root"))

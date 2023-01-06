@@ -622,47 +622,58 @@ Hints:
   just like in HTML. In the slide, I have it set to 40px
  */
 
-var page = _react2.default.createElement(
-    "div",
-    { className: "m-4" },
-    _react2.default.createElement("img", { src: "./react-logo.png", className: "mb-2", width: "50px" }),
-    _react2.default.createElement(
-        "p",
-        { className: "fw-bold fs-4" },
-        "Fun facts about React"
-    ),
-    _react2.default.createElement(
-        "ul",
+// import React from "react"
+// import ReactDOM from "react-dom"
+
+// function TemporaryName() {
+//     return (
+//         <div className="m-4">
+//         <img src="./react-logo.png" className="mb-2" width="50px"/>
+//         <p className="fw-bold fs-4">Fun facts about React</p>
+//         <ul>
+//             <li>Was first released in 2013</li>
+//             <li>Was originally created by Jordan Walke</li>
+//             <li>Has well over 100K stars on Github</li>
+//             <li>Is maintained by Facebook</li>
+//             <li>Powers thousands of enterprise apps, including mobile apps</li>
+//         </ul>
+//     </div>
+//     )
+// }
+
+// ReactDOM.render(<TemporaryName/>, document.getElementById("root"))
+
+
+/**
+Challenge: 
+
+Part 1: Create a page of your own using a custom Page component
+
+It should return an ordered list with the reasons why you're
+excited to be learning React :)
+
+Render your list to the page
+
+ */
+
+function Page() {
+    return _react2.default.createElement(
+        "ol",
         null,
         _react2.default.createElement(
             "li",
             null,
-            "Was first released in 2013"
+            "It's a popular library, so I'll be able to fit in with the cool kids!"
         ),
         _react2.default.createElement(
             "li",
             null,
-            "Was originally created by Jordan Walke"
-        ),
-        _react2.default.createElement(
-            "li",
-            null,
-            "Has well over 100K stars on Github"
-        ),
-        _react2.default.createElement(
-            "li",
-            null,
-            "Is maintained by Facebook"
-        ),
-        _react2.default.createElement(
-            "li",
-            null,
-            "Powers thousands of enterprise apps, including mobile apps"
+            "I'm more likely to get a job as a developer if I know React"
         )
-    )
-);
+    );
+}
 
-_reactDom2.default.render(page, document.getElementById("root"));
+_reactDom2.default.render(_react2.default.createElement(Page, null), document.getElementById("root"));
 
 /***/ }),
 /* 6 */
