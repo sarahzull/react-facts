@@ -446,32 +446,6 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// const navbar = (
-//   <nav>
-//     <h1>Website</h1>
-//     <ul>
-//       <li>Menu</li>
-//       <li>About</li>
-//       <li>Contact</li>
-//     </ul>
-//   </nav>
-// )
-
-/* Old version */
-// ReactDOM.render(
-//   navbar,
-//   document.getElementById("root")
-// )
-
-// ReactDOM.createRoot(document.getElementById("root")).render(navbar)
-
-/**
-Challenge: fix our code!
-
-Don't forget, you're not using CDNs anymore, so there's no
-global "ReactDOM" variable to use anymore.
- */
-
 // ReactDOM.render(<h1>Hi everyone</h1>, document.getElementById("root"))
 
 // ReactDOM.render(<p>Hi, my name is Sarah!</p>, document.getElementById("root"))
@@ -590,47 +564,105 @@ Create a navbar in JSX:
     - Don't worry about styling yet - it'll just be plain-looking HTML for now
 */
 
+// const navbar = (
+//   <nav>
+//     <h1>Website</h1>
+//     <ul>
+//       <li>Menu</li>
+//       <li>About</li>
+//       <li>Contact</li>
+//     </ul>
+//   </nav>
+// )
+
+/* Old version */
+// ReactDOM.render(
+//   navbar,
+//   document.getElementById("root")
+// )
+
+// ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+
+/**
+Challenge: fix our code!
+
+Don't forget, you're not using CDNs anymore, so there's no
+global "ReactDOM" variable to use anymore.
+ */
+
+// const page = (
+//   <div>
+//       <h1>My awesome website in React</h1>
+//       <h3>Reasons I love React</h3>
+//       <ol>
+//           <li>It's composable</li>
+//           <li>It's declarative</li>
+//           <li>It's a hireable skill</li>
+//           <li>It's actively maintained by skilled people</li>
+//       </ol>
+//   </div>
+// )
+
+// ReactDOM.render(page, document.getElementById("root"))
+// document.getElementById("root").append(JSON.stringify(page))
+
+
+/*
+Challenge: Starting from scratch, build and render the 
+HTML for our section project. Check the Google slide for 
+what you're trying to build.
+
+We'll be adding styling to it later.
+
+Hints:
+* The React logo is a file in the project tree, so you can
+  access it by using `src="./react-logo.png" in your image
+  element
+* You can also set the `width` attribute of the image element
+  just like in HTML. In the slide, I have it set to 40px
+ */
+
 var page = _react2.default.createElement(
     "div",
-    null,
+    { className: "m-4" },
+    _react2.default.createElement("img", { src: "./react-logo.png", className: "mb-2", width: "50px" }),
     _react2.default.createElement(
-        "h1",
-        null,
-        "My awesome website in React"
+        "p",
+        { className: "fw-bold fs-4" },
+        "Fun facts about React"
     ),
     _react2.default.createElement(
-        "h3",
-        null,
-        "Reasons I love React"
-    ),
-    _react2.default.createElement(
-        "ol",
+        "ul",
         null,
         _react2.default.createElement(
             "li",
             null,
-            "It's composable"
+            "Was first released in 2013"
         ),
         _react2.default.createElement(
             "li",
             null,
-            "It's declarative"
+            "Was originally created by Jordan Walke"
         ),
         _react2.default.createElement(
             "li",
             null,
-            "It's a hireable skill"
+            "Has well over 100K stars on Github"
         ),
         _react2.default.createElement(
             "li",
             null,
-            "It's actively maintained by skilled people"
+            "Is maintained by Facebook"
+        ),
+        _react2.default.createElement(
+            "li",
+            null,
+            "Powers thousands of enterprise apps, including mobile apps"
         )
     )
 );
 
 _reactDom2.default.render(page, document.getElementById("root"));
-// document.getElementById("root").append(JSON.stringify(page))
 
 /***/ }),
 /* 6 */
