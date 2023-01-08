@@ -656,19 +656,61 @@ Render your list to the page
 
  */
 
+/**
+Challenge: 
+
+Part 2: 
+- Add a `header` element with a nested `nav` element. Inside the `nav`,
+  include a `img` element with the image of the React logo inside
+  (src="./react-logo.png") and make sure to set the width to something
+  more manageable so it doesn't take up the whole screen
+- Add an `h1` with some text describing the page. (E.g. "Reasons
+  I'm excited to learn React"). Place it above the ordered list.
+- Add a `footer` after the list that says: 
+    "© 20xx <last name here> development. All rights reserved."
+
+ */
+
 function Page() {
     return _react2.default.createElement(
-        "ol",
+        "div",
         null,
         _react2.default.createElement(
-            "li",
+            "header",
             null,
-            "It's a popular library, so I'll be able to fit in with the cool kids!"
+            _react2.default.createElement(
+                "nav",
+                null,
+                _react2.default.createElement("img", { src: "./react-logo.png", width: "40px" })
+            )
         ),
         _react2.default.createElement(
-            "li",
+            "h1",
             null,
-            "I'm more likely to get a job as a developer if I know React"
+            "Reasons I'm excited to learn React"
+        ),
+        _react2.default.createElement(
+            "ol",
+            null,
+            _react2.default.createElement(
+                "li",
+                null,
+                "It's a popular library, so I'll be able to fit in with the cool kids!"
+            ),
+            _react2.default.createElement(
+                "li",
+                null,
+                "I'm more likely to get a job as a developer if I know React"
+            )
+        ),
+        _react2.default.createElement(
+            "footer",
+            null,
+            _react2.default.createElement(
+                "small",
+                null,
+                "\xA9 2021 Ziroll development. All rights reserved."
+            )
         )
     );
 }
