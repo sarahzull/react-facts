@@ -446,6 +446,12 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/**
+Mini Challenge:
+Move the `header` element from Page into 
+its own component called "Header"
+*/
+
 // ReactDOM.render(<h1>Hi everyone</h1>, document.getElementById("root"))
 
 // ReactDOM.render(<p>Hi, my name is Sarah!</p>, document.getElementById("root"))
@@ -671,19 +677,60 @@ Part 2:
 
  */
 
+function Header() {
+    return _react2.default.createElement(
+        "header",
+        null,
+        _react2.default.createElement(
+            "nav",
+            { className: "nav" },
+            _react2.default.createElement("img", { src: "./react-logo.png", className: "nav-logo" }),
+            _react2.default.createElement(
+                "ul",
+                { className: "nav-items" },
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Pricing"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "About"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Contact"
+                )
+            )
+        )
+    );
+}
+
 function Page() {
     return _react2.default.createElement(
         "div",
         null,
-        _react2.default.createElement(
-            "header",
-            null,
-            _react2.default.createElement(
-                "nav",
-                null,
-                _react2.default.createElement("img", { src: "./react-logo.png", width: "40px" })
-            )
-        ),
+        _react2.default.createElement(Header, null),
+        _react2.default.createElement(MainContent, null),
+        _react2.default.createElement(Footer, null)
+    );
+}
+
+/**
+Challenge: 
+
+- Move the `footer` into its own component called "Footer" 
+  and render that component inside the Page component.
+- Move the `h1` and `ol` together into another component
+  called "MainContent" and render inside Page as well.
+*/
+
+function MainContent() {
+    return _react2.default.createElement(
+        "div",
+        null,
         _react2.default.createElement(
             "h1",
             null,
@@ -702,15 +749,18 @@ function Page() {
                 null,
                 "I'm more likely to get a job as a developer if I know React"
             )
-        ),
+        )
+    );
+}
+
+function Footer() {
+    return _react2.default.createElement(
+        "footer",
+        null,
         _react2.default.createElement(
-            "footer",
+            "small",
             null,
-            _react2.default.createElement(
-                "small",
-                null,
-                "\xA9 2021 Ziroll development. All rights reserved."
-            )
+            "\xA9 2021 Ziroll development. All rights reserved."
         )
     );
 }
