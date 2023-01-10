@@ -444,12 +444,48 @@ var _reactDom = __webpack_require__(4);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _Header = __webpack_require__(15);
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _MainContent = __webpack_require__(16);
+
+var _MainContent2 = _interopRequireDefault(_MainContent);
+
+var _Footer = __webpack_require__(17);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
 Mini Challenge:
 Move the `header` element from Page into 
 its own component called "Header"
+*/
+
+function App() {
+    return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(_Header2.default, null),
+        _react2.default.createElement(_MainContent2.default, null),
+        _react2.default.createElement(_Footer2.default, null)
+    );
+}
+
+/**
+Challenge: 
+
+- Move the `footer` into its own component called "Footer" 
+  and render that component inside the Page component.
+- Move the `h1` and `ol` together into another component
+  called "MainContent" and render inside Page as well.
+*/
+
+/**
+Challenge: move the Footer and MainContent components
+into their own files.
 */
 
 // ReactDOM.render(<h1>Hi everyone</h1>, document.getElementById("root"))
@@ -677,95 +713,7 @@ Part 2:
 
  */
 
-function Header() {
-    return _react2.default.createElement(
-        "header",
-        null,
-        _react2.default.createElement(
-            "nav",
-            { className: "nav" },
-            _react2.default.createElement("img", { src: "./react-logo.png", className: "nav-logo" }),
-            _react2.default.createElement(
-                "ul",
-                { className: "nav-items" },
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    "Pricing"
-                ),
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    "About"
-                ),
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    "Contact"
-                )
-            )
-        )
-    );
-}
-
-function Page() {
-    return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(Header, null),
-        _react2.default.createElement(MainContent, null),
-        _react2.default.createElement(Footer, null)
-    );
-}
-
-/**
-Challenge: 
-
-- Move the `footer` into its own component called "Footer" 
-  and render that component inside the Page component.
-- Move the `h1` and `ol` together into another component
-  called "MainContent" and render inside Page as well.
-*/
-
-function MainContent() {
-    return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(
-            "h1",
-            null,
-            "Reasons I'm excited to learn React"
-        ),
-        _react2.default.createElement(
-            "ol",
-            null,
-            _react2.default.createElement(
-                "li",
-                null,
-                "It's a popular library, so I'll be able to fit in with the cool kids!"
-            ),
-            _react2.default.createElement(
-                "li",
-                null,
-                "I'm more likely to get a job as a developer if I know React"
-            )
-        )
-    );
-}
-
-function Footer() {
-    return _react2.default.createElement(
-        "footer",
-        null,
-        _react2.default.createElement(
-            "small",
-            null,
-            "\xA9 2021 Ziroll development. All rights reserved."
-        )
-    );
-}
-
-_reactDom2.default.render(_react2.default.createElement(Page, null), document.getElementById("root"));
+_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("root"));
 
 /***/ }),
 /* 6 */
@@ -30778,6 +30726,129 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = Header;
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Header() {
+    return _react2.default.createElement(
+        "header",
+        null,
+        _react2.default.createElement(
+            "nav",
+            { className: "nav" },
+            _react2.default.createElement("img", { src: "./react-logo.png", className: "nav-logo" }),
+            _react2.default.createElement(
+                "ul",
+                { className: "nav-items" },
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Pricing"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "About"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Contact"
+                )
+            )
+        )
+    );
+}
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = MainContent;
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MainContent() {
+    return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+            "h1",
+            null,
+            "Reasons I'm excited to learn React"
+        ),
+        _react2.default.createElement(
+            "ol",
+            null,
+            _react2.default.createElement(
+                "li",
+                null,
+                "It's a popular library, so I'll be able to fit in with the cool kids!"
+            ),
+            _react2.default.createElement(
+                "li",
+                null,
+                "I'm more likely to get a job as a developer if I know React"
+            )
+        )
+    );
+}
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = Footer;
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Footer() {
+    return _react2.default.createElement(
+        "footer",
+        null,
+        _react2.default.createElement(
+            "small",
+            null,
+            "\xA9 2021 Ziroll development. All rights reserved."
+        )
+    );
+}
 
 /***/ })
 /******/ ]);
