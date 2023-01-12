@@ -444,50 +444,13 @@ var _reactDom = __webpack_require__(4);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Header = __webpack_require__(15);
+var _App = __webpack_require__(15);
 
-var _Header2 = _interopRequireDefault(_Header);
-
-var _MainContent = __webpack_require__(16);
-
-var _MainContent2 = _interopRequireDefault(_MainContent);
-
-var _Footer = __webpack_require__(17);
-
-var _Footer2 = _interopRequireDefault(_Footer);
+var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/**
-Mini Challenge:
-Move the `header` element from Page into 
-its own component called "Header"
-*/
-
-function App() {
-    return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(_Header2.default, null),
-        _react2.default.createElement(_MainContent2.default, null),
-        _react2.default.createElement(_Footer2.default, null)
-    );
-}
-
-/**
-Challenge: 
-
-- Move the `footer` into its own component called "Footer" 
-  and render that component inside the Page component.
-- Move the `h1` and `ol` together into another component
-  called "MainContent" and render inside Page as well.
-*/
-
-/**
-Challenge: move the Footer and MainContent components
-into their own files.
-*/
-
+_reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById("root"));
 // ReactDOM.render(<h1>Hi everyone</h1>, document.getElementById("root"))
 
 // ReactDOM.render(<p>Hi, my name is Sarah!</p>, document.getElementById("root"))
@@ -713,7 +676,64 @@ Part 2:
 
  */
 
-_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("root"));
+// import React from "react"
+// import ReactDOM from "react-dom"
+// import Header from "./Header"
+// import MainContent from "./MainContent"
+// import Footer from "./Footer"
+
+/**
+Mini Challenge:
+Move the `header` element from Page into 
+its own component called "Header"
+*/
+
+// function App() {
+//     return (
+//         <div>
+//             <Header />
+
+//             <MainContent />
+
+//             <Footer />
+//         </div>
+//     )
+// }
+
+/**
+Challenge: 
+
+- Move the `footer` into its own component called "Footer" 
+  and render that component inside the Page component.
+- Move the `h1` and `ol` together into another component
+  called "MainContent" and render inside Page as well.
+*/
+
+/**
+Challenge: move the Footer and MainContent components
+into their own files.
+*/
+
+/**
+Challenge: Project setup
+
+- Create the following components in separate files inside
+  the components folder.  In each one, just render an `h1` 
+  with the name of the component (e.g. return <h1>Navbar goes here</h1>):
+    - Navbar
+    - Main
+- Create an App component outside the components folder (sibling to
+  the index.js file)
+    - Have App render the Navbar and Main components
+- Import and render the App component inside of index.js using ReactDOM
+    - At this point you should have your "Navbar goes here" etc. showing up
+      in the mini-browser.
+- Go to Google fonts and get the "Inter" font with weights 400, 600, and 700.
+  Put the links to those fonts ABOVE the style.css link in index.html (Use
+  the `<link/>` elements instead of the @import or npm options for getting
+  the fonts. You may need to do some extra research to figure out how this 
+  works if you haven't done it before)
+*/
 
 /***/ }),
 /* 6 */
@@ -30735,45 +30755,31 @@ if (process.env.NODE_ENV === 'production') {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
-exports.default = Header;
+exports.default = App;
 
 var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Navbar = __webpack_require__(17);
+
+var _Navbar2 = _interopRequireDefault(_Navbar);
+
+var _Main = __webpack_require__(16);
+
+var _Main2 = _interopRequireDefault(_Main);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Header() {
-    return _react2.default.createElement(
-        "header",
-        null,
-        _react2.default.createElement(
-            "nav",
-            { className: "nav" },
-            _react2.default.createElement("img", { src: "./react-logo.png", className: "nav-logo" }),
-            _react2.default.createElement(
-                "ul",
-                { className: "nav-items" },
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    "Pricing"
-                ),
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    "About"
-                ),
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    "Contact"
-                )
-            )
-        )
-    );
+function App() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'container' },
+    _react2.default.createElement(_Navbar2.default, null),
+    _react2.default.createElement(_Main2.default, null)
+  );
 }
 
 /***/ }),
@@ -30784,9 +30790,9 @@ function Header() {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
-exports.default = MainContent;
+exports.default = Main;
 
 var _react = __webpack_require__(2);
 
@@ -30794,30 +30800,12 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function MainContent() {
-    return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(
-            "h1",
-            null,
-            "Reasons I'm excited to learn React"
-        ),
-        _react2.default.createElement(
-            "ol",
-            null,
-            _react2.default.createElement(
-                "li",
-                null,
-                "It's a popular library, so I'll be able to fit in with the cool kids!"
-            ),
-            _react2.default.createElement(
-                "li",
-                null,
-                "I'm more likely to get a job as a developer if I know React"
-            )
-        )
-    );
+function Main() {
+  return _react2.default.createElement(
+    "h1",
+    null,
+    "Main component"
+  );
 }
 
 /***/ }),
@@ -30828,9 +30816,9 @@ function MainContent() {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
-exports.default = Footer;
+exports.default = Navbar;
 
 var _react = __webpack_require__(2);
 
@@ -30838,16 +30826,12 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Footer() {
-    return _react2.default.createElement(
-        "footer",
-        null,
-        _react2.default.createElement(
-            "small",
-            null,
-            "\xA9 2021 Ziroll development. All rights reserved."
-        )
-    );
+function Navbar() {
+  return _react2.default.createElement(
+    "h1",
+    null,
+    "Navbar component"
+  );
 }
 
 /***/ })
