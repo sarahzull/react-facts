@@ -498,7 +498,7 @@ function Main() {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.default = Navbar;
 
@@ -509,22 +509,27 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Navbar() {
-  return _react2.default.createElement(
-    "nav",
-    null,
-    _react2.default.createElement("img", { src: "../images/react-logo.png" }),
-    _react2.default.createElement(
-      "h3",
-      null,
-      "ReactFacts"
-    ),
-    _react2.default.createElement(
-      "h4",
-      null,
-      "React Course - Projects"
-    )
-  );
-}
+    return _react2.default.createElement(
+        "nav",
+        null,
+        _react2.default.createElement("img", { src: "../images/react-icon-small.png", className: "nav--icon" }),
+        _react2.default.createElement(
+            "h3",
+            { className: "nav--logo_text" },
+            "ReactFacts"
+        ),
+        _react2.default.createElement(
+            "h4",
+            { className: "nav--title" },
+            "React Course - Project 1"
+        )
+    );
+} /**
+  Challenge: Complete the Navbar to match the design
+  
+  Hint: use the Figma file for the most accurate peek at the design
+  (colors, sizes, fonts, etc.)
+  */
 
 /***/ }),
 /* 8 */
