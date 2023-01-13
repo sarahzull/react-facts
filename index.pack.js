@@ -484,9 +484,42 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Main() {
   return _react2.default.createElement(
-    "h1",
+    "main",
     null,
-    "Main component"
+    _react2.default.createElement(
+      "h1",
+      { className: "main--title" },
+      "Fun facts about React"
+    ),
+    _react2.default.createElement(
+      "ul",
+      { className: "main--facts" },
+      _react2.default.createElement(
+        "li",
+        null,
+        "Was first released in 2013"
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        "Was originally created by Jordan Walke"
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        "Has well over 100K stars on Github"
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        "Is maintained by Facebook"
+      ),
+      _react2.default.createElement(
+        "li",
+        null,
+        "Power thousands of enterprise apps, including mobile apps"
+      )
+    )
   );
 }
 
@@ -512,7 +545,7 @@ function Navbar() {
     return _react2.default.createElement(
         "nav",
         null,
-        _react2.default.createElement("img", { src: "../images/react-icon-small.png", className: "nav--icon" }),
+        _react2.default.createElement("img", { src: "../images/react-logo.png", className: "nav--icon" }),
         _react2.default.createElement(
             "h3",
             { className: "nav--logo_text" },
